@@ -71,6 +71,17 @@
       "matchStrings": [
         "\\/\\/\\s+renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+?)(?: (?:packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))\\s+\\/\\/\\s+\\+default=[\\\"']?[^:]+?:(?<currentValue>[^@]+?)(@(?<currentDigest>sha256:[0-9a-f]+))?[\"']?\\s"
       ]
+    },
+    {
+      "customType": "regex",
+      "managerFilePatterns": [
+        "**/*.hcl"
+      ],
+      "matchStrings": [
+        "\\/\\/\\s*renovate:\\s*repo=timescaledb\\s*?(suite=(?<suite>.*?))?\\s*depName=(?<depName>.*?)?\\s*\"[A-Za-z0-9_-]+\"\\s*=\\s*\"(?<currentValue>.*)\""
+      ],
+      "registryUrlTemplate": "https://packagecloud.io/timescale/timescaledb/debian?suite={{#if suite}}{{suite}}{{else}}stable{{/if}}&components=main&binaryArch=amd64",
+      "datasourceTemplate": "deb"
     }
   ],
   "packageRules": [

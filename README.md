@@ -38,6 +38,7 @@ they are maintained by their respective authors, and PostgreSQL Debian Group
 | **[pg_crash](pg-crash)** | **Disruptive** fault injection and chaos engineering extension | [github.com/cybertec-postgresql/pg_crash](https://github.com/cybertec-postgresql/pg_crash) |
 | **[pgvector](pgvector)** | Vector similarity search for PostgreSQL | [github.com/pgvector/pgvector](https://github.com/pgvector/pgvector) |
 | **[PostGIS](postgis)** | Geospatial database extension for PostgreSQL | [postgis.net/](https://postgis.net/) |
+| **[TimescaleDB Toolkit](timescaledb-toolkit)** | Extension for more TimescaleDB hyperfunctions | [https://github.com/timescale/timescaledb-toolkit/](https://github.com/timescale/timescaledb-toolkit/) |
 
 
 Extensions are provided only for the OS versions already built by the
