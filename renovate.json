@@ -73,12 +73,13 @@
       ]
     },
     {
+      "description": "updates the deb package versions for timescale in the metadata.hcl files",
       "customType": "regex",
       "managerFilePatterns": [
         "**/*.hcl"
       ],
       "matchStrings": [
-        "\\/\\/\\s*renovate:\\s*repo=timescaledb\\s*?(suite=(?<suite>.*?))?\\s*depName=(?<depName>.*?)?\\s*\"[A-Za-z0-9_-]+\"\\s*=\\s*\"(?<currentValue>.*)\""
+        "\\/\\/\\s*renovate:\\s*repo=timescaledb\\s*?(suite=(?<suite>.*?))?\\s*depName=(?<depName>.*?)?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s*(sql|package)\\s*=\\s*\"(?<currentValue>.*)\""
       ],
       "registryUrlTemplate": "https://packagecloud.io/timescale/timescaledb/debian?suite={{#if suite}}{{suite}}{{else}}stable{{/if}}&components=main&binaryArch=amd64",
       "datasourceTemplate": "deb"
