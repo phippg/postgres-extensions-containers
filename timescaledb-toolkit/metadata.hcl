@@ -11,7 +11,7 @@ metadata = {
   bin_path                 = []
   env                      = {}
   auto_update_os_libs      = false
-  required_extensions      = ["timescaledb-tsl]
+  required_extensions      = ["timescaledb-tsl"]
   create_extension         = true
 
   versions = {
