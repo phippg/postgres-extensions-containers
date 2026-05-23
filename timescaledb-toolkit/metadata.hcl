@@ -20,7 +20,7 @@ metadata = {
         // renovate: repo=timescaledb suite=bookworm depName=timescaledb-toolkit-postgresql-18
         package = "1:1.22.0~debian12"
 
-        // renovate: repo=timescaledb suite=bookwork depName=timescaledb-toolkit-postgresql-18 extractVersion=^1:(?<version>\d+\.\d+)
+        // renovate: repo=timescaledb suite=bookwork depName=timescaledb-toolkit-postgresql-18 extractVersion=^1:(?<version>\d+\.\d+.\d+)
         sql = "1.22.0"
       }
     }
@@ -29,7 +29,7 @@ metadata = {
         // renovate: repo=timescaledb suite=trixie depName=timescaledb-toolkit-postgresql-18
         package = "1:1.22.0~debian13"
 
-        // renovate: repo=timescaledb suite=trixie depName=timescaledb-toolkit-postgresql-18 extractVersion=^1:(?<version>\d+\.\d+)
+        // renovate: repo=timescaledb suite=trixie depName=timescaledb-toolkit-postgresql-18 extractVersion=^1:(?<version>\d+\.\d+.\d+)
         sql = "1.22.0"
       }
     }
